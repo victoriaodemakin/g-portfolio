@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100;200;400;500;600;700;800;900&family=Montserrat:wght@100;200;300;400;500;600&display=swap");
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  --font-1: "Montserrat", sans-serif;
+  --bg: #ffffff;
+  --dark-bg: #757575;
+  --head-text: #000000;
+  --paragraph-text: #757575;
+  --button-bg: #f1f1f1;
+}
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+body {
+  font-family: var(--font-1);
+}
+h1 {
+  font-size: 4em;
+  font-weight: 600;
+  margin-bottom: 0.1em;
+  font-family: "Montserrat", sans-serif;
+  text-transform: capitalize;
+  text-align: center;
+  color: var(--head-text);
+}
+h2 {
+  font-size: 2em;
+  font-weight: 500;
+  font-family: var(--font-1);
+  text-transform: capitalize;
+  text-align: left;
+  color: var(--paragraph-text);
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 1em;
+}
+h3 {
+  font-size: 2em;
+  font-weight: 400;
+  text-transform: capitalize;
+  text-align: center;
+  color: var(--dark-bg);
+}
+header {
+  padding: 3em 2em 7em 2em;
+}
+
+header p {
+  font-size: 1em;
+  font-weight: 100;
+  font-family: var(--font-1);
+  text-align: center;
+  color: var(--head-text);
+  line-height: 2em;
+}
+header img {
+  width: 100%;
+}
+section {
+  width: 100%;
+}
+.sidebar-col-1 {
+  display: none;
+}
+.sidebar-col-2 {
+  padding: ;
+}
+.navigation {
+  display: flex;
+  justify-content: end;
+}
+nav {
+  display: none;
+}
+.burger {
+  padding: 2em;
+}
+.primary-cta {
+  text-align: center;
+  margin: 1em 3.5em;
+  color: var(--dark-bg);
+  font-family: "Montserrat";
+  background-color: var(--button-bg);
+  padding: 1em;
+  font-size: 1em;
+  border: none;
+}
+hr {
+  color: var(--button-bg);
+  margin-bottom: 1em;
+}
+
+.portfolio {
+  padding: 2em;
+}
+.portfolio-grid img {
+  width: 100%;
+}
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  grid-gap: 1em;
+  padding: 0 0.5em;
+  justify-content: center;
+  align-items: center;
+}
